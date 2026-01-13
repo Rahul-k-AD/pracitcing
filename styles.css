@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.header button {
+
+
+    background-color: orange;
+    padding: 15px;
+    border-radius: 15px;
+
+
+}
+
+.header button:hover {
+    background-color: yellow;
+}
+
+.main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+
+    gap: 20px;
+
+
+}
+
+.c1,
+.c2,
+.c3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: lightblue;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.c1:hover,
+.c2:hover,
+.c3:hover {
+
+    box-shadow: var(--box-shadow-hover);
+}
+
+
+.c1 button,
+.c2 button,
+.c3 button {
+    margin-top: auto;
+}
+
+:root {
+    --button-bg: orange;
+    --box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.144);
+    --box-shadow-hover: 15px 15px 10px rgba(0, 0, 0, 0.144);
+}
+
+@media(max-width:780px) {
+    .main {
+        flex-direction: column;
+    }
+
+
+}
+
+.innerbox {
+    opacity: 0;
+}
+
+.c1:hover .innerbox {
+    opacity: 1;
+}
